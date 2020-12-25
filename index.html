@@ -6,45 +6,45 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<header >
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top justify-content-center" id="menu">
-  <div id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active ">
-        <a class="nav-link" style="color: white;" id="home" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: white;" id="scroll1" href="#">About me </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" style="color: white;" id="scroll2" href="#">Projects</a>
-      </li>
-    </ul>
-  
-  </div>
+	<header>
+		<!-- hamburger-->
+	<div class="bars" id="nav-action">
+  	<span class="bar"></span>
+</div>
+<nav id="nav">
+  <ul>
+    <li class="shape-circle circle-one"><a href=""id="scroll1" >About me</a></li>
+    <li class="shape-circle circle-two"><a href=""id="scroll2">Projects</a></li>
+    <li class="shape-circle circle-three"><a href=""id="scroll3">Media Links</a></li>
+    <li class="shape-circle circle-five">
+     <a href="#nav">Home</a>
+    </li>
+  </ul>
 </nav>
 </header>
 	   <div class="container-fluid" >
       <div class="row">
         <div class="box text-center">
-    <h1 id="effectan">It's Theodore</h1>
-    <h1 id="effectan">Welcome</h1>
+        	<h2 id="effectan">Welcome &nbsp;</h2>
+        	<h2 id="effectan">It's Theodore</h2>
     </div>
          <div class="box text-center" id="mobile" style="display: none;">
         <h1>Scroll Here</h1>
         </div>
       </div> 
      </div>
-		
-	
 	<div class="container">
 		<section id="aboutme">
 				<div class="jumbotron jumbotron-fluid text-center">
 			  		<div class="container">
 			    <h1 class="display-4">About me</h1>
+			    <i class="fas fa-arrow-circle-down" id="scrolldown">&nbsp;&nbsp;&nbsp;</i><i class="fas fa-arrow-circle-up" id="totop"></i>
+
 			    <p class="lead">“Intelligence is a very valuable thing. And usually, it comes far too late.”</p>
 			    <p>Alfie Salmons</p>
 			</div>
@@ -56,15 +56,14 @@
   						</div>
   						<div class="card-body">
     						<h5 class="card-title">Hello my name is Theodore</h5>
-    						<p>From a young age i  had a programming and technological affinity, this passion led me to enroll to Polytechnic University of the Aegean in the department of Product and System design engineering. My stream of study, in this 10 semesters university, was mostly around interactive systems and engineering. </p>
-    						<h4>University</h4>
-    						<p>During my university years i had the chance to learn about electrical engineering and get my hands on electronics like arduino or raspberry, create websites with front-end and backend, practise low level programming in microcontrollers and use tools like oscilloscope or multimeter. </p>
-    						<p>Due to the designing affinity of my university, i was lucky to learn alot about design methodologies, UI/UX and apply them succesffuly on my projects.</p>
-    						<h4>Internships</h4>
-    						<p>Additionally, when i succesffully completed all the courses offered by my university, leaving Thesis and internship as the last two, i decided to pause my studies and fulfil my compulsory army services. Luckily, after 3 hard months on greek-turkish borders, i joined the <span style="font-weight:bold; ">IT department in the Ministry of National Defense.</span>
-    						My role there was mostly debugging and testing a newly created web application called efedros.army.gr, other than that i used python to explore large datasets, visualize them and pass them to my supervisors. This internship lasted 6 months and i got a letter of recommendation from Colonel Ltn. Mr.Petrinos.</p>
-    						<p>My second internship, took place in a company called <span style="font-weight:bold;">Hellas Digital</span>, an amazing electronics company with a higlhy educated CEO who was close to our small team at all times. My role there was to develop prototypes that would be a part of a bigger project. The prototypes were  microcontrollers like Arduino or Esp32 and i had to establish connection between devices, connect these devices with IoT platforms like Thingsboard or Thingspeak and retrieve data through sensors. This internship lasted 3 months due to the fact that i couldnt be present due to covid-19 and impossible to have my hands on so many electronics from home.</p>
-    						<p>My last internship, is taking place right now in <span style="font-weight:bold;">ONEX SA</span>, a Greek-American company that is a Security provider and also owns 2 out of the 3 shipyards in Greece. My current role there is to developer web applications for their CRM and HRM. My tasks so far were to create a reporting system for the company's CRM, a pdf converter, an Excel Importer with a table to read the Excel Fields and right now is the creation of further modules for our HRM. I am currently working here since November 2020. </p>
+    						<p>From a young age I had a programming and technological inclination, which led me to enroll to the Polytechnic University of the Aegean specifically in the Department of Product and System Design Engineering. During the ten-semester study in the university, the courses and my projects were mostly affiliated with interactive systems and engineering.</p>
+    						<h4 style="font-weight: bold;">University</h4>
+    						<p>During my course of study, I had the chance to learn about Electrical Engineering and get my hands on electronics like Arduino or Raspberry. Also, I created websites with front-end and back-end, practise low level programming in microcontrollers and use tools like oscilloscope or multimeter. </p>
+    						<p>Due to the designing nature of my university, I was fortunate enough to learn a lot about design methodologies, UI/UX and apply them successfully on my personal projects.</p>
+    						<h4 style="font-weight: bold;">Internships</h4>
+    						<p>When I successfully completed all the courses offered by the university, final Thesis and internship as the remaining final two to graduate, I decided to pause my studies and complete my mandatory military service. Luckily, after three hard months of training and serving on the Greek - Turkish borders, I joined the <span style="font-weight: bold;">IT Department in the Ministry of Defense</span>. My position there was mostly debugging and testing a newly created web application called efedros.army.gr. Apart from that, I used Python to explore large datasets, visualize and pass them to my supervisors. This internship lasted six months and as a result, it offered me a letter of recommendation from Colonel Mr. Petrinos</p>
+    						<p>My second internship took place at company called <span style="font-weight: bold;">Hellas Digital</span>, an amazing electronics company with a highly educated CEO, who was available and close to our small team at all times. There, my main role was to develop prototypes, which would be a part of a bigger project. The prototypes were microcontrollers like Arduino or Esp32 and my task was to establish connection between devices, connect these devices with IoT platforms like Thingsboard or Thingspeak and retrieve data through sensors. This internship lasted for three months, due to the unfortunate fact, that I couldn’t be present due to Covid-19 regulations and since I was working from home, it was impossible for me to have access to a plethora of electronics.</p>
+    						<p>My current internship, is taking place in <span style="font-weight: bold;">ONEX S.A</span>., a Greek-American company, which is a security provider and also owns two out of the three shipyards in Greece. My position there, involves me to develop web applications for the company’s CRM and HRM. My tasks so far, were to create a reporting system for the company's CRM, a PDF converter, an Excel Importer with a table to read the Excel Fields and right now, is the creation of further modules for our HRM. I am currently working here since November 2020.</p>
 
   						</div>
 						</div>
@@ -98,8 +97,6 @@
  						  <li class="list-group-item list-group-item-warning"><i class="fas fa-university"style="float:left;"></i>HTML and Javascript-National and kapodistrian University</li>
  						  <h4>Status</h4>
  						  <p>Currently Enrolled</p>
-
-					
   						</div>
 						</div>
 					</div>
@@ -111,14 +108,14 @@
 		<section id="projects">
 			<div class="jumbotron jumbotron-fluid text-center">
 			    <h1 class="display-4">Projects</h1>
+			    <i class="fas fa-arrow-circle-down" id="tomedia"></i> &nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-circle-up" id="scrollup"></i>
 			    <p>Keep in mind some projects are private and company owned so i cannot share them</p>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="card text-center" id="financeanalytics">
   					<div class="card-header">
-    				Finance-Project-EDA
- 
+    				  <p style="font-weight: bold;">Finance Project EDA</p>
   					</div>
   				<div class="card-body">
     			    <img src="images/analytics.jpg" class="img-fluid">
@@ -133,8 +130,7 @@
 					<div class="col-lg-6">
 					<div class="card text-center" id="rpi">
   					<div class="card-header">
-    				Raspberry-Interactive-museum-Guidance-Code
- 
+    				<p style="font-weight: bold;">Raspberry Interactive museum guidance project</p>
   					</div>
   				<div class="card-body">
     			    <img src="images/museum.png" class="img-fluid">
@@ -153,7 +149,8 @@
 				<div class="col-lg-6">
 					<div class="card text-center">
   					<div class="card-header">
-    				Codeigniter PHP MVC-Sample-modules
+    				<p style="font-weight: bold;">Codeigniter a PHP MVC-Sample modules</p>
+
  
   					</div>
   				<div class="card-body">
@@ -169,8 +166,7 @@
 					<div class="col-lg-6">
 					<div class="card text-center">
   					<div class="card-header">
-    				Esp32 ECG app
- 
+    				<p style="font-weight: bold;">Esp32 Ecg app</p>
   					</div>
   				<div class="card-body">
     			    <img src="images/esp.png" class="img-fluid">
@@ -189,12 +185,12 @@
 				<div class="col-lg-6">
 					<div class="card text-center">
   					<div class="card-header">
-    				Braccio Test
+            <p style="font-weight: bold;">Braccio Tinkerkit</p>
  
   					</div>
   				<div class="card-body">
     			    <img src="images/braccio.jpg" class="img-fluid">
-    			    <p>Braccio Arduino Testing.</p>
+    			    <p >Braccio Arduino Testing.</p>
     			    <p>The TinkerKit Braccio is a fully operational robotic arm.</p>
     			    <p>It can be assembled in several ways for multiple tasks.</p>
     			    <p style="font-style: italic; color:green ">Developed with <i class="fab fa-cuttlefish">++</i></p>
@@ -202,11 +198,45 @@
   				</div>
 				</div>
 			</div>
+          <div class="col-lg-6">
+          <div class="card text-center">
+            <div class="card-header">
+            <p style="font-weight: bold;">Machine Learning</p>
+ 
+            </div>
+          <div class="card-body">
+              <img src="images/analytics.jpg" class="img-fluid">
+              <p>Linear Regression</p>
+              <p>Predicting on what should a company invest to</p>
+              <p>A website or an application based on yearly amount of money spent</p>
+              <p style="font-style: italic; color:green ">Developed with <i class="fab fa-python"></i></p>
+          <a class="btn btn-warning" href="https://github.com/Theodorkkbs/Linear-Regression-Project"><i class="fas fa-link" aria-hidden="true"></i>Go to Github</a>
+          </div>
+        </div>
+      </div>
 			</div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card text-center">
+            <div class="card-header">
+            <p style="font-weight: bold;">Machine Learning</p>
+ 
+            </div>
+          <div class="card-body">
+              <img src="images/analytics.jpg" class="img-fluid">
+              <p>Logistic Regression</p>
+              <p>Classification</p>
+              <p>Categorizing Clicks on ads to either 0 or 1 based on the advertisements </p>
+              <p style="font-style: italic; color:green ">Developed with <i class="fab fa-python"></i></p>
+          <a class="btn btn-warning" href="https://github.com/Theodorkkbs/Logistic-Regression-project"><i class="fas fa-link" aria-hidden="true"></i>Go to Github</a>
+          </div>
+        </div>
+      </div>
+      </div>
 		</section>
   </div>
 <footer class="bg-dark text-center text-lg-start">
-  <div class="text-center p-2" style="color:white;background-color: rgba(0, 0, 0, 0.2)">
+  <div class="text-center p-2" style="color:white;background-color: rgba(0, 0, 0, 0.2)" id="medialinks">
    Media Links
   </div>
    <ul class="mediaflex text-center">
@@ -217,7 +247,7 @@
 </ul>
     <div class="text-center p-3" style="color:white;background-color: rgba(0, 0, 0, 0.2)">
     © 2020 Copyright:
-    <a class="text-light">TheodorKkbs</a>
+    <a class="text-light">TheodorKkbs</a><i class="fas fa-angle-double-up" id="mainmenu" style="font-size: 24px; float: left;"></i><i class="fas fa-angle-double-up" id="mainmenu"style="font-size: 24px; float: right;"></i>
   </div>
 </footer>
 
@@ -270,6 +300,72 @@ $(document).ready(function () {
             }
         });    
     });  
+});
+</script>
+
+<script>
+var bars = document.getElementById("nav-action");
+var nav = document.getElementById("nav");
+bars.addEventListener("click", barClicked, false);
+nav.addEventListener("click", barClicked, false)
+
+//setting up the clicked Effect
+function barClicked() {
+  bars.classList.toggle('active');
+  nav.classList.toggle('visible');
+}
+</script>
+
+<script> 
+$(function() {
+  $('#scroll3').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:$('#medialinks').position().top}, 'fast');
+  });
+}); 
+</script>
+
+<script>
+$(function() {
+  $('#scrollup').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:$('#aboutme').position().top}, 'fast');
+  });
+});
+</script>
+
+<script>
+$(function() {
+  $('#scrolldown').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:$('#projects').position().top}, 'fast');
+  });
+});
+</script>
+
+<script>
+$(function() {
+  $('#totop').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:$('#nav').position().top}, 'fast');
+  });
+});
+</script>
+
+<script>
+$(function() {
+  $('#tomedia').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:$('#medialinks').position().top}, 'fast');
+  });
+});
+</script>
+<script>
+$(function() {
+  $('#mainmenu').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:$('#nav').position().top}, 'fast');
+  });
 });
 </script>
 
